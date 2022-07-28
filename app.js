@@ -1,5 +1,7 @@
-const submit = () => {
-  alert("Ok");
+const submitted = (event) => {
+  event.preventDefault();
+  alert("Submitted");
+  location.href= 'index.html';
 }
 
  document.getElementById("depdate").value = JSON.parse(localStorage.getItem("data")).depdate;

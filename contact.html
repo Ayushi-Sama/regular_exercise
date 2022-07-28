@@ -9,52 +9,54 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <div class="container">
-        <div class="contact row align-items-center justify-content-between">
-            <div class="row">
+        <div class="row align-items-center one ">
+            <div class="contact row align-items-center justify-content-between">
                 <h1 class="col-12">Contact Details</h1>
                 <h3 class="col-12">Your problems are our priority</h3>
             </div>
+            <!-- <div class="border"></div> -->
+            <form class="row" id="form-submit" onsubmit="submitted(event)" action=""  method="">
+                <div class="row align-items-center justify-content-between">
+                    <div class="row col-12 justify-content-between">
+                        <select class="my-3 "class="my-3" id="issue" required name='issue' required>
+                            <option value="">Select the issue</option>
+                            <option value="Staff">Staff</option>
+                            <option value="Services">Services</option>
+                            <option value="Maintenance issue">Maintenance issue</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    <label class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12" for="name">Name : </label>
+                    <input class="mb-3 col-xl-9 col-lg-12 px-3 py-1 col-md-12 col-sm-12 col-xs-12" type="text" id="name" placeholder="Enter Your Name" required>
+
+                    <label class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12" for="email">Email address</label>
+                    <div class="col-xl-9 col-lg-12 col-md-12 col-sm-12 col-xs-12 p-0 m-0 mb-3">
+                    <input type="email" class=" py-1 col-12 px-3 col-lg-12 col-sm-12 col-xs-12 col-md-12" id="email"  required placeholder="Enter email">
+                    <small class="mb-3 small ">We'll never share your email with anyone else.</small>
+                </div>
+
+                    
+
+                    <label class="col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12" for="query">Type Your Query Here</label>
+                    <textarea class="area col-xl-9 col-lg-12 mb-3 py-1 px-3 col-md-12 col-sm-12 col-xs-12" id="query" rows="2" placeholder="Type Your Query Here" required></textarea>
+
+                    <div class="form-group form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="check" required>
+                        <label class="form-check-label" for="check">Check me out</label>
+                      </div>
+
+                    <input type="submit" class="contact-form-btn" value="Submit Your Query">
+                </div>
+                </div>
+
+                
+            </form>
+            
 
             
         </div>
-    </div>
-
+        
+        <script src="app.js"></script>
 </body>
-<!-- <body>
-    <div class="container">
-        <div class="contact-us-content d-flex flex-column">
-            <h1>Contact Details</h1>
-            <h3>Your problems are our priority</h3>
-            <table class="table contact_table table-light">
-                <thead>
-                    <tr>
-                        <th>Services</th>
-                        <th>Values</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>Phone</b></td>
-                        <td><a+919876543211</td>
-                    </tr>
-                    <tr>
-                        <td><b>email</b></td>
-                        <td>behance@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td><b>Address</b></td>
-                        <td>
-                            <address>Nangal , Yamuna Expressway Road, Sector 135, 
-                             Punjab 201304 
-                            </address>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <a class="btn back btn-danger" href="index.html" >Back</a>
-        </div>
-    </div>
-</body> -->
+
 
 </html>
